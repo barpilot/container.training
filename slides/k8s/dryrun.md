@@ -60,7 +60,7 @@
 
 - Generate the YAML for a Deployment without creating it:
   ```bash
-  kubectl create deployment web --image nginx --dry-run
+  kubectl create deployment web --image nginx --dry-run=client
   ```
 
 ]
@@ -71,9 +71,9 @@
 
 ---
 
-## Using `--dry-run` with `kubectl apply`
+## Using `--dry-run=client` with `kubectl apply`
 
-- The `--dry-run` option can also be used with `kubectl apply`
+- The `--dry-run=client` option can also be used with `kubectl apply`
 
 - However, it can be misleading (it doesn't do a "real" dry run)
 
@@ -87,7 +87,7 @@
 
 ---
 
-## The limits of `kubectl apply --dry-run`
+## The limits of `kubectl apply --dry-run=client`
 
 .exercise[
 
@@ -103,7 +103,7 @@
 
 - Ask `kubectl` what would be applied:
   ```bash
-  kubectl apply -f web.yaml --dry-run --validate=false -o yaml
+  kubectl apply -f web.yaml --dry-run=client --validate=false -o yaml
   ```
 
 ]
@@ -124,7 +124,7 @@ The resulting YAML doesn't represent a valid DaemonSet.
 
 - Try the same YAML file as earlier, with server-side dry run:
   ```bash
-  kubectl apply -f web.yaml --server-dry-run --validate=false -o yaml
+  kubectl apply -f web.yaml --dry-run=server --validate=false -o yaml
   ```
 
 ]
