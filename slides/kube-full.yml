@@ -36,6 +36,9 @@ content:
     - k8s/batch-jobs.md
     - k8s/labels-annotations.md
     - k8s/kubectl-logs.md
+    - k8s/batch-jobs.md
+    - k8s/labels-annotations.md
+    - k8s/kubectl-logs.md
     - k8s/logs-cli.md
     - shared/declarative.md
     - k8s/declarative.md
@@ -48,7 +51,10 @@ content:
     - k8s/ourapponkube.md
     - k8s/exercise-wordsmith.md
     - k8s/yamldeploy.md
-  - - k8s/setup-k8s.md
+  - - k8s/setup-overview.md
+    - k8s/setup-devel.md
+    - k8s/setup-managed.md
+    - k8s/setup-selfhosted.md
     - k8s/dashboard.md
     #- k8s/kubec/tlscale.md
     - k8s/scalingdockercoins.md
