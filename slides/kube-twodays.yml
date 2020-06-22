@@ -21,7 +21,8 @@ content:
 - k8s/intro.md
 - shared/about-slides.md
 - shared/chat-room-im.md
-#- shared/chat-room-zoom.md
+#- shared/chat-room-zoom-meeting.md
+#- shared/chat-room-zoom-webinar.md
 - shared/toc.md
 -
   - shared/prereqs.md
@@ -52,7 +53,10 @@ content:
   #- k8s/exercise-wordsmith.md
 -
   - k8s/yamldeploy.md
-  #- k8s/setup-k8s.md
+  - k8s/setup-overview.md
+  - k8s/setup-devel.md
+  #- k8s/setup-managed.md
+  #- k8s/setup-selfhosted.md
   - k8s/dashboard.md
   #- k8s/kubectlscale.md
   - k8s/scalingdockercoins.md
